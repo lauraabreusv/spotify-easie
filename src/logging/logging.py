@@ -5,7 +5,6 @@ from datetime import datetime
 from functools import wraps
 from src.core import core
 from src.easie import Easie
-from src.spotify import Spotify
 from src.utils import utils
 
 
@@ -128,5 +127,9 @@ class Logging():
             }]
 
             self.easie.post_in_easie(df_params)
+
+        if self.logging['easie_error_file']:
+            with open(self.logging['easie_error_filename'], 'a') as f:
+                f.write(str(data) + '\n')
 
         return None
