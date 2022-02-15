@@ -47,6 +47,7 @@ def artists_top_tracks(easie, spotify, core_settings, easie_table_ref):
     ]
     df = pd.DataFrame(spotify.get_artists_info(artists_ids))
     top_tracks = []
+
     for artist_id in artists_ids:
         for market in core_settings['markets']:
             top_tracks += [

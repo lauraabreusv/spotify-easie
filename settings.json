@@ -1,12 +1,12 @@
 {
     "easie": {
-        "user": "",
-        "developer_key": "",
-        "url_api": "https://api.easiedata.com"
+        "user": "laura",
+        "developer_key": "6847cc180c2e5de892b0262ceebbc968",
+        "url_api": "http://127.0.0.1:5000"
     },
     "spotify": {
-        "client_id": "",
-        "client_secret": "",
+        "client_id": "5a610873c8614fcb9d4fc50536c98f69",
+        "client_secret": "d7504c6aef044fb4a2f5bef1fac346a5",
         "track_info": ["album.id", "album.name"],
         "artist_info": ["genres"]
     },
@@ -19,7 +19,7 @@
         "artists_top_tracks":{
             "artists_names": ["milky chance", "jack johnson"],
             "markets": ["US", "BR"],
-            "top_tracks": 2,
+            "top_tracks": 2
         },
         "related_artists_top_tracks":{
             "max_popularity": 65,

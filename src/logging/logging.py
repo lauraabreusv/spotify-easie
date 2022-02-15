@@ -63,6 +63,7 @@ class Logging():
 
         post_res = None
         get_res = None
+
         if easiesync is not None:
             post_res = easiesync.easie.post_res 
             get_res = easiesync.easie.get_res
@@ -127,9 +128,5 @@ class Logging():
             }]
 
             self.easie.post_in_easie(df_params)
-
-        if self.logging['easie_error_file']:
-            with open(self.logging['easie_error_filename'], 'a') as f:
-                f.write(str(data) + '\n')
 
         return None
